@@ -1,0 +1,212 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "lato";
+}
+
+.el-radio-group {
+  padding: 3px 4px;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(94, 129, 244, 0.1),
+      rgba(94, 129, 244, 0.1)
+    ),
+    #ffffff;
+  .el-radio-button__inner {
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+    background: linear-gradient(
+        0deg,
+        rgba(94, 129, 244, 0.1),
+        rgba(94, 129, 244, 0.1)
+      ),
+      #ffffff;
+    border: none;
+  }
+  .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  .el-radio-button:first-child .el-radio-button__inner {
+    border-left: none;
+  }
+  .el-radio-button + .el-radio-button {
+    margin-left: 4px;
+  }
+}
+
+.el-select .el-input .el-select__caret {
+  color: #9b9b9b;
+  font-size: 18px;
+}
+.el-tag .el-icon-close {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+.el-switch__label * {
+  font-weight: 500;
+  color: #2f3330;
+}
+$-mat-form-border-radius: 10px;
+$-mat-form-padding-x: 24px;
+$-mat-form-font-size: 16px;
+
+.el-dialog__wrapper {
+  background: rgba(31, 31, 31, 0.9);
+}
+
+.el-dialog {
+  border-radius: 20px;
+  max-width: 80%;
+  line-height: 24px;
+}
+.el-dialog__header {
+  padding: 20px 32px;
+  padding-bottom: 10px;
+}
+.el-dialog__body {
+  padding: 30px 32px;
+  word-break: break-word;
+  font-weight: 400;
+}
+.el-dialog__footer {
+  padding: 10px 32px 20px 32px;
+}
+.mat-form {
+  .el-input__inner {
+    height: 64px;
+    border-radius: $-mat-form-border-radius;
+    font-size: $-mat-form-font-size;
+    padding: 0 $-mat-form-padding-x;
+    &:focus {
+      background: #f5f5fa;
+      border: 1px solid #5e81f4;
+      &::placeholder {
+        color: #5e81f4;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        top: 4px;
+        position: absolute;
+      }
+    }
+  }
+  .el-textarea__inner {
+    padding: 20px $-mat-form-padding-x;
+    border-radius: $-mat-form-border-radius;
+    font-size: $-mat-form-font-size;
+    &:focus {
+      &::placeholder {
+        color: #5e81f4;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        top: 4px;
+        position: absolute;
+      }
+    }
+  }
+  &.el-date-editor {
+    .el-input__inner {
+      padding: 0 30px;
+    }
+  }
+  .el-checkbox__inner {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #d7d9db;
+    border-radius: 5px;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: white;
+  }
+  .el-checkbox__inner::after {
+    border: 2.5px solid #5e81f4;
+    border-left: 0;
+    border-top: 0;
+    height: 9px;
+    left: 8px;
+    top: 3px;
+  }
+  .el-checkbox__label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7a7a7a;
+  }
+  .el-radio__inner {
+    width: 23px;
+    height: 23px;
+  }
+  .el-radio__input.is-checked .el-radio__inner {
+    background: white;
+  }
+  .el-radio__inner::after {
+    width: 11.5px;
+    height: 11.5px;
+    background-color: #5e81f4;
+  }
+  .el-switch__core:after {
+    left: 2px;
+    top: 2px;
+  }
+  &.el-switch .el-switch__core {
+    height: 22px;
+  }
+  &.el-switch .el-switch__core:after {
+    background-color: #98a9bc;
+  }
+  &.el-switch.is-checked .el-switch__core::after {
+    background-color: white;
+  }
+}
+.mat-form.bg-white.el-switch .el-switch__core {
+  background: white;
+  border-color: white;
+}
+.mat-form.bg-white.el-switch.is-checked .el-switch__core {
+  border-color: #5e81f4;
+  background-color: #5e81f4;
+}
+.required:after {
+  content: " *";
+  color: red;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.form-error {
+  color: #e77b7b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  min-height: 16px;
+}
+.mat-form label {
+  color: #7a7a7a;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.form-action-wrapper {
+  .el-button {
+    width: 105px;
+  }
+  .cancel-btn {
+    margin-left: 100px;
+  }
+}
+
+.el-dropdown-menu__item {
+  color: #2f3330;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+}

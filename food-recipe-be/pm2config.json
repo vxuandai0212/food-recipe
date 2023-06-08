@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "food-recipe",
+      "script": "build/index.js",
+      "instances": 3,
+      "autorestart": true,
+      "watch": false,
+      "time": true,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+import { CAMPAIGNS } from '@/utils/constant'
+
+export const CRITERIA_DESCRIPTION = {
+  EMAIL_REQUIRED: 'Địa chỉ email không được để trống',
+  EMAIL_MAXLENGTH: 'Địa chỉ email tối đa 100 kí tự',
+  EMAIL_FORMAT: 'Địa chỉ email phải có dạng name@domain',
+  PHONE_REQUIRED: 'Số điện thoại không được để trống',
+  PHONE_MAXLENGTH: 20,
+  PHONE_FORMAT: 'Chỉ chứa kí tự số',
+  PHONE_PREFIX: 'Số điện thoại bắt đầu bằng 0 hoặc 84'
+}
+
+export const RECEIVER_VALIDATE = {
+  [CAMPAIGNS.EMAIL]: [
+    [CRITERIA_DESCRIPTION.EMAIL_REQUIRED],
+    [CRITERIA_DESCRIPTION.EMAIL_MAXLENGTH],
+    [CRITERIA_DESCRIPTION.EMAIL_FORMAT]
+  ],
+  [CAMPAIGNS.SMS]: [
+    [[CRITERIA_DESCRIPTION.PHONE_REQUIRED]],
+    [[CRITERIA_DESCRIPTION.PHONE_MAXLENGTH]],
+    [[CRITERIA_DESCRIPTION.PHONE_FORMAT]],
+    [[CRITERIA_DESCRIPTION.PHONE_PREFIX]]
+  ]
+}
+
+export const CRITERIA_CODE = {
+  EMAIL_REQUIRED: 'EMAIL_REQUIRED',
+  EMAIL_MAXLENGTH: 'EMAIL_MAXLENGTH',
+  EMAIL_FORMAT: 'EMAIL_FORMAT',
+  PHONE_REQUIRED: 'PHONE_REQUIRED',
+  PHONE_MAXLENGTH: 'PHONE_MAXLENGTH',
+  PHONE_FORMAT: 'PHONE_FORMAT',
+  PHONE_PREFIX: 'PHONE_PREFIX'
+}
+
+export const RECEIVER_STATUS = {
+  EMPTY: 1,
+  INVALID: 2,
+  VALID: 3
+}
+
+export const RECEIVER_SOURCE = {
+  LOCAL: 'LOCAL',
+  ORG: 'ORG'
+}
+
+export const RECEIVER_VALIDATE_TYPE = {
+  SMS: 'SMS',
+  EMAIL: 'EMAIL'
+}

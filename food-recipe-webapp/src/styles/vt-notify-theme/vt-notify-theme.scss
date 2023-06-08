@@ -1,0 +1,63 @@
+/**
+* I think element-ui's default theme color is too light for long-term use.
+* So I modified the default color and you can modify it to your liking.
+**/
+
+/* theme color */
+$--color-primary: #5e81f4;
+$--color-success: #6dd697;
+$--color-warning: #f4be5e;
+$--color-danger: #e77b7b;
+
+$--button-font-weight: 400;
+
+// $--color-text-regular: #1f2d3d;
+
+$--border-color-light: #dfe4ed;
+$--border-color-lighter: #e6ebf5;
+
+$--table-border: 1px solid#dfe6ec;
+
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+$--input-placeholder-color: #7a7a7a;
+$--color-black: #1c1d21;
+
+$--button-border-radius: 8px !default;
+$--button-medium-border-radius: 8px;
+$--button-font-weight: 600;
+$--button-medium-padding-vertical: 14px;
+$--button-medium-padding-horizontal: 29px;
+$--button-disabled-font-color: #8181a5;
+$--button-disabled-background-color: #f6f6f6;
+$--button-font-size: 12px !default;
+$--button-medium-font-size: 12px !default;
+
+$--pagination-font-size: 14px !default;
+$--pagination-font-color: #8181a5;
+$--pagination-button-width: 35.5px !default;
+$--pagination-button-height: 32px !default;
+$--pagination-border-radius: 6px !default;
+
+$--tag-font-size: 14px !default;
+$--tag-padding: 5px 8px !default;
+$--tag-border-radius: 6px !default;
+
+$--dialog-title-font-size: 26px !default;
+$--dialog-content-font-size: 16px !default;
+
+$--avatar-border-radius: 8px !default;
+
+@import "~element-ui/packages/theme-chalk/src/index";
+@import "./btn.scss";
+@import "./sidebar.scss";
+@import "./form.scss";
+@import "./table.scss";
+@import "./common.scss";
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  theme: $--color-primary;
+}

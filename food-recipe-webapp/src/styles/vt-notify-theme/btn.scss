@@ -1,0 +1,80 @@
+.el-button--primary.is-plain:hover,
+.el-button--primary.is-plain:focus,
+.el-button--primary:hover,
+.el-button--primary:focus {
+  background: linear-gradient(
+      0deg,
+      rgba(28, 29, 33, 0.35),
+      rgba(28, 29, 33, 0.35)
+    ),
+    #5e81f4;
+  border-color: none;
+}
+
+.el-button--primary.is-plain.is-disabled,
+.el-button--primary.is-plain.is-disabled:hover,
+.el-button--primary.is-plain.is-disabled:focus,
+.el-button--primary.is-plain.is-disabled:active {
+  background: #f6f6f6;
+  color: #8181a5;
+}
+.el-button--success.is-plain:hover,
+.el-button--success.is-plain:focus,
+.el-button--success:hover,
+.el-button--success:focus {
+  background: #36b688;
+  border-color: #36b688;
+}
+.el-button {
+  line-height: 18px;
+  vertical-align: middle;
+}
+.el-button.btn-icon {
+  height: 46px;
+  padding: 0 13px;
+}
+.el-button--mini {
+  font-size: 13px;
+  padding: 8px 16px 6px 16px;
+  border-radius: 8px;
+  line-height: 18px;
+}
+.el-button--small {
+  border-radius: 8px;
+}
+.el-button--mini.btn-icon {
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+  padding: 6px 7px 4px 7px;
+  height: 32px;
+}
+.el-button.el-button--small.btn-icon {
+  height: 40px;
+  padding: 0 0;
+  width: 40px;
+  .svg-icon {
+    vertical-align: middle;
+  }
+}
+.el-button + .el-button {
+  margin-left: 8px;
+}
+.el-button--primary,
+.el-button--danger,
+.el-button--info,
+.el-button--success,
+.el-button--warning,
+.el-button.is-plain {
+  border: none;
+}
+
+.el-button--primary.is-plain.btn-outline {
+  border: 1px solid rgba(94, 129, 244, 0.6);
+  border-radius: 8px;
+}
+.el-button--danger.is-plain.btn-outline {
+  border: 1px solid rgba(231, 123, 123, 0.6);
+  border-radius: 8px;
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "config/*": ["./src/config/*"],
+      "controllers/*": ["./src/controllers/*"],
+      "controllers": ["./src/controllers/index"],
+      "constants/*": ["./src/constants/*"],
+      "entity/*": ["./src/entity/*"],
+      "emails/*": ["./src/emails/*"],
+      "middlewares/*": ["./src/middlewares/*"],
+      "repositories/*": ["./src/repositories/*"],
+      "routes/*": ["./src/routes/*"],
+      "services/*": ["./src/services/*"],
+      "utils/*": ["./src/utils/*"],
+      "validations/*": ["./src/validations/*"]
+    },
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false
+  }
+}
